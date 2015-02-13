@@ -1,0 +1,28 @@
+{
+  "name": "express-auth-example",
+  "version": "1.0.0",
+  "description": "Express API endpoint example with authentication",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leesei/express-auth-example.git"
+  },
+  "author": "leesei@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leesei/express-auth-example/issues"
+  },
+  "homepage": "https://github.com/leesei/express-auth-example",
+  "dependencies": {
+    "body-parser": "^1.11.0",
+    "compression": "^1.4.0",
+    "cookie-parser": "^1.3.3",
+    "express": "^4.11.2",
+    "express-session": "^1.10.2",
+    "morgan": "^1.5.1",
+    "passport": "^0.2.1",
+    "passport-local": "^1.0.0",
+    "tracer": "^0.7.3"
+  }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" media="screen">
+<head>
+	<title>Backend test</title>
+</head>
+<body>
+	<h2>
+		API backend with authentication
+	</h2>
+	Use <code>bob:secret</code> or <code>joe:birthday</code> to login
+
+	<div ng-controller="formController">
+		<form>
+			<div>
+				<label>Username:</label>
+				<input type="text" name="username" ng-model="form.username"/>
+			</div>
+			<div>
+				<label>Password:</label>
+				<input type="password" name="password" ng-model="form.password"/>
+			</div>
+			<input type="button" value="Log In" ng-click="loginForm()">
+			<input type="button" value="Log out" ng-click="logout()">
+			<input type="button" value="get /me" ng-click="me()">
+			<input type="button" value="get /me2" ng-click="me2()">
+			<input type="button" value="get /hello" ng-click="hello()">
+		</form>
+
+		<pre>{{testCode}}</pre>
+	</div>
+</body>
+</html>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+<script type="text/javascript" src="./script.js"></script>
